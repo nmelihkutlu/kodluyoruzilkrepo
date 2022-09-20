@@ -1,28 +1,50 @@
-# Kodluyoruz Ilk Repo
+# Insertion-Sort-Projesi
+>**[patika.dev](https://app.patika.dev/courses/veri-yapilari-ve-algoritmalar/insertion-sort-proje) platformu öğrenme projesidir.**
+Profil için tıklayınız: [app.patika.dev/nmelihkutlu](https://app.patika.dev/nmelihkutlu)
 
-Bu repo [Kodluyoruz](https://www.kodluyoruz.org) Front-End Eğitiminde oluşturduğumuz ilk repo. İçerisinde bir adet README dosyası, bir adet de index.html barındırıyor.
+Insertion Sort Projesi
 
-## Installation
 
-Öncelikle projeyi clonelayın. (Buraya sizin reponuzdan aldığınız link gelecek)
+## Soru
+```
+Proje 1
+[22,27,16,2,18,6] -> Insertion Sort
 
-```bash
-git clone https://github.com/cengizcmataraci/kodluyoruzilkrepo.git
+Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+Time Complexity: Average case: Aradığımız sayının ortada olması,Worst case: Aradığımız sayının sonda olması, Best case: Aradığımız sayının dizinin en başında olması.
+Dizi sıralandıktan sonra 18 sayısı hangi case kapsamına girer? Yazınız.
+
+[7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort'a göre ilk 4 adımını yazınız.
 ```
 
-## Usage
+## Cevaplar
+1. Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
 
-Projeyi cloneladıktan sonra Visual Studio Code programında açınız.
+    ```
+    ­Insertion Sort algoritmasında en küçük olan en başa geliyor, en baştaki ile yer değiştiriyor.
+    1. Sıradan kontrol et, en küçük olanı bul, 
+    2. en küçük olan ile en baştakini değiştir,
+    3. son elamana gelene kadar yanındaki elaman ile devam et.
+    ```
 
-Linux için:
-```linux
-cd kodluyoruzilkrepo
-code .
-```
+2. Big-O gösterimini yazınız.
+    ```
+    O(n^2)
+    ```
 
-## Contributing
-Pull requestler kabul edilir. Büyük değişiklikler için, lütfen önce neyi değiştirmek istediğinizi tartışmak için bir konu açınız.
+3. Dizi sıralandıktan sonra 18 sayısı hangi case kapsamına girer? Yazınız.
+    ```
+    Worst Case
+    Dizinin sıralanmış hali [2,3,4,5,6,7,8,9,15] olduğundan 18 sayısı dizinin en sonuna gelir.
+    ```
 
+4. [7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort'a göre ilk 4 adımını yazınız.
+    ```
+    1.adım:  [2*,3,5,8,7*,9,4,15,6]
+    2.adım:  [2,3*,5,8,7,9,4,15,6]
+    3.adım:  [2,3,4*,8,7,9,5*,15,6]
+    4.adım:  [2,3,4,5*,7,9,8*,15,6]
+    * En küçük olan baştaki ile yer değiştirdi.
+    ```
 
-## License
-[MIT]
